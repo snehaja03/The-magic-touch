@@ -1,0 +1,88 @@
+.card{
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background-color: aliceblue;
+  
+}
+.row{
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  left: 150px;
+  top: -30px;
+}
+.block{
+  display: flex;
+}
+.block1{
+  flex: 1;
+}
+.container1 h1:nth-child(1) {
+  color: black;
+  font-family: 'Fira Code', monospace;
+  font-weight: 800;
+  font-size: 50px;
+  margin: 0 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+  animation: type 2s steps(40,end) forwards;
+}
+
+.container1 h3:nth-child(2) {
+  opacity: 0;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  background: linear-gradient(to right,black,black,black);
+  font-weight: 800;
+  font-size: 100px;  
+  width: 430px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+.c1{
+  display: flex;
+  text-align: center;
+  padding: 100px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  flex: 1;
+}
+.card{
+  flex: 1;
+  padding: 30px;
+  margin: 20px;
+  height: 300px;
+}
+.text{
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
